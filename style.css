@@ -431,6 +431,34 @@ a { color: inherit; text-decoration: none; }
 
 .about-content p + p { margin-top: 0; }
 
+.about-date {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-meta);
+  margin-bottom: var(--space-lg);
+}
+
+.about-figure {
+  margin: var(--space-xl) 0 var(--space-sm);
+  text-align: center;
+}
+
+.about-figure img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.about-figure figcaption {
+  margin-top: var(--space-sm);
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--text-meta);
+}
+
 /* ============================================
    FOOTER
    ============================================ */

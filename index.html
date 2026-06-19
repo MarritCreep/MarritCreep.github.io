@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Notes — [Your Name]</title>
+  <title>Study Notes — Vladislav Tikhaev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -15,7 +15,7 @@
     <div class="container">
       <div class="site-identity">
         <a href="index.html" class="site-name">Study Notes</a>
-        <span class="site-author">by [Your Name]</span>
+        <span class="site-author">by Vladislav Tikhaev</span>
       </div>
       <nav class="site-nav">
         <a href="index.html" class="nav-link active">All Posts</a>
@@ -27,65 +27,50 @@
   <main class="container">
 
     <section class="page-intro">
-      <h1 class="intro-heading">A working notebook.</h1>
-      <p class="intro-sub">Lecture notes, summaries, and ideas collected while studying. Written to understand, shared in case it helps.</p>
+      <h1 class="intro-heading">Politics, in my own words.</h1>
+      <p class="intro-sub">Opinion pieces and notes on the political events unfolding around us — written by an independent voice, for a university course and beyond.</p>
     </section>
 
     <section class="filter-bar">
       <span class="filter-label">Filter by topic</span>
       <div class="tag-filters">
         <button class="tag-btn active" data-tag="all">All</button>
-        <button class="tag-btn" data-tag="biology">Biology</button>
-        <button class="tag-btn" data-tag="history">History</button>
-        <button class="tag-btn" data-tag="philosophy">Philosophy</button>
-        <button class="tag-btn" data-tag="statistics">Statistics</button>
+        <button class="tag-btn" data-tag="opinion">Opinion</button>
+        <button class="tag-btn" data-tag="politics">Politics</button>
+        <button class="tag-btn" data-tag="russia">Russia</button>
+        <button class="tag-btn" data-tag="israel">Israel</button>
       </div>
     </section>
 
     <section class="post-list" id="post-list">
 
-      <article class="post-card" data-tags="biology statistics">
-        <div class="post-meta">
-          <time class="post-date">June 12, 2025</time>
-          <div class="post-tags">
-            <span class="tag">Biology</span>
-            <span class="tag">Statistics</span>
-          </div>
-        </div>
-        <a href="posts/hardy-weinberg.html" class="post-title-link">
-          <h2 class="post-title">Hardy–Weinberg Equilibrium: What it actually means</h2>
-        </a>
-        <p class="post-excerpt">Most textbooks state the equation and move on. Here I work through the five assumptions and why violating any single one is enough to drive evolution.</p>
-        <a href="posts/hardy-weinberg.html" class="post-read-more">Read note →</a>
-      </article>
+      <!-- ============================================================
+           HOW TO ADD A POST:
+           1. Duplicate posts/hardy-weinberg.html, rename it (e.g. posts/my-post.html)
+              and write your article inside it.
+           2. Copy the <article> template below, paste it ABOVE this comment,
+              and edit the date, tags, title, excerpt, and the two href links.
+           3. The data-tags attribute (lowercase, space-separated) controls
+              the topic filter above — match it to the tag buttons.
 
-      <article class="post-card" data-tags="history">
-        <div class="post-meta">
-          <time class="post-date">May 28, 2025</time>
-          <div class="post-tags">
-            <span class="tag">History</span>
-          </div>
-        </div>
-        <a href="posts/historiography.html" class="post-title-link">
-          <h2 class="post-title">Notes on historiography: How historians know what they know</h2>
-        </a>
-        <p class="post-excerpt">A summary of the main schools of historical thought — from positivism to poststructuralism — and what each says about the status of historical truth.</p>
-        <a href="posts/historiography.html" class="post-read-more">Read note →</a>
-      </article>
+           TEMPLATE (copy me):
+           <article class="post-card" data-tags="opinion politics">
+             <div class="post-meta">
+               <time class="post-date">Month DD, YYYY</time>
+               <div class="post-tags">
+                 <span class="tag">Opinion</span>
+                 <span class="tag">Politics</span>
+               </div>
+             </div>
+             <a href="posts/my-post.html" class="post-title-link">
+               <h2 class="post-title">My post title</h2>
+             </a>
+             <p class="post-excerpt">A one or two sentence summary of the post.</p>
+             <a href="posts/my-post.html" class="post-read-more">Read note →</a>
+           </article>
+           ============================================================ -->
 
-      <article class="post-card" data-tags="philosophy">
-        <div class="post-meta">
-          <time class="post-date">May 10, 2025</time>
-          <div class="post-tags">
-            <span class="tag">Philosophy</span>
-          </div>
-        </div>
-        <a href="posts/trolley-problem.html" class="post-title-link">
-          <h2 class="post-title">Beyond the trolley problem: Consequentialism in real ethical decisions</h2>
-        </a>
-        <p class="post-excerpt">The trolley problem is a useful lever, but it's not where the interesting work is. Looking at how consequentialist reasoning applies outside contrived thought experiments.</p>
-        <a href="posts/trolley-problem.html" class="post-read-more">Read note →</a>
-      </article>
+      <p class="post-excerpt">No posts yet — the first one is coming soon.</p>
 
     </section>
 
@@ -93,7 +78,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p class="footer-text">Written and maintained by [Your Name] · <a href="https://github.com/yourusername/yourusername.github.io" class="footer-link">View source on GitHub</a></p>
+      <p class="footer-text">Written and maintained by Vladislav Tikhaev · <a href="https://github.com/MarritCreep/MarritCreep.github.io" class="footer-link">View source on GitHub</a></p>
     </div>
   </footer>
 
