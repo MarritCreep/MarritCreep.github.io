@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardy–Weinberg Equilibrium — Study Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-identity">
+        <a href="../index.html" class="site-name">Study Notes</a>
+        <span class="site-author">by [Your Name]</span>
+      </div>
+      <nav class="site-nav">
+        <a href="../index.html" class="nav-link">All Posts</a>
+        <a href="../about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <article>
+
+      <header class="post-header">
+        <a href="../index.html" class="post-back">← All notes</a>
+        <div class="post-meta">
+          <time class="post-date">June 12, 2025</time>
+          <div class="post-tags">
+            <span class="tag">Biology</span>
+            <span class="tag">Statistics</span>
+          </div>
+        </div>
+        <h1 class="post-header-title">Hardy–Weinberg Equilibrium: What it actually means</h1>
+        <p class="post-header-subtitle">Most textbooks state the equation and move on. Here I work through the five assumptions and why violating any single one is enough to drive evolution.</p>
+      </header>
+
+      <div class="post-body">
+
+        <p>The Hardy–Weinberg principle is usually introduced as a formula: <em>p² + 2pq + q² = 1</em>. Students memorize it, plug in numbers, move on. But the more useful way to think about it is as a <strong>null hypothesis</strong> — a description of what a population looks like when nothing evolutionary is happening.</p>
+
+        <h2>The five assumptions</h2>
+
+        <p>For a population to be in Hardy–Weinberg equilibrium, five conditions must hold simultaneously:</p>
+
+        <ol>
+          <li><strong>No mutation</strong> — allele frequencies don't change due to new mutations arising</li>
+          <li><strong>Random mating</strong> — individuals pair without preference for any particular genotype</li>
+          <li><strong>No natural selection</strong> — all genotypes survive and reproduce at equal rates</li>
+          <li><strong>No gene flow</strong> — no individuals enter or leave the population carrying different allele frequencies</li>
+          <li><strong>Infinite population size</strong> — no genetic drift from random sampling error</li>
+        </ol>
+
+        <blockquote>
+          <p>The value of HWE isn't in finding populations that satisfy it. No real population does. The value is in measuring how far real populations deviate from it, and asking <em>why</em>.</p>
+        </blockquote>
+
+        <h2>Why "infinite population" matters</h2>
+
+        <p>This is the assumption that trips people up most. The requirement isn't literally infinite — it's that the population is large enough that random sampling of gametes doesn't meaningfully shift allele frequencies between generations. In small populations, even neutral alleles can drift to fixation or extinction purely by chance. This is genetic drift, and it's evolution — just evolution without selection.</p>
+
+        <h3>A concrete example</h3>
+
+        <p>Imagine a population with a rare allele at frequency <em>q = 0.01</em>. In a population of 10,000, that's ~100 copies — relatively stable. In a population of 20, that's 0.2 copies — which means some generations it'll be present, some it won't. Drift dominates at small N.</p>
+
+        <h2>Using HWE as a diagnostic tool</h2>
+
+        <p>In practice, population geneticists use deviations from HWE to detect:</p>
+
+        <ul>
+          <li>Inbreeding (excess homozygotes → non-random mating)</li>
+          <li>Selection (one genotype is over- or under-represented)</li>
+          <li>Population structure (Wahlund effect — mixing of subpopulations)</li>
+          <li>Genotyping error (in sequencing studies)</li>
+        </ul>
+
+        <hr />
+
+        <h2>My exam notes summary</h2>
+
+        <p>For the exam: the equation <em>p² + 2pq + q² = 1</em> describes expected genotype frequencies if the five assumptions hold. Given any allele frequency <em>p</em>, you can derive <em>q = 1 − p</em> and then calculate expected heterozygosity as <em>2pq</em>. If observed heterozygosity differs significantly, one or more assumptions are violated — that's the starting point for the real biology question.</p>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">Written and maintained by [Your Name] · <a href="https://github.com/yourusername/yourusername.github.io" class="footer-link">View source on GitHub</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
